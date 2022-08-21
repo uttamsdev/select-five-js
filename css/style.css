@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.card-section {
+  background-color: #151515;
+  padding: 100px 0px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-row-gap: 60px;
+}
+.card {
+  width: 264px;
+  height: 371px;
+  background: #0d0d0d;
+  border: 1px solid #434343;
+}
+.card img {
+  width: 264px;
+  height: 204px;
+}
+
+.card h2 {
+  color: white;
+  margin: 16px 0px 8px 0px;
+  text-align: center;
+}
+.history{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.history p {
+  color: #b3b3b3;
+}
+
+.card button{
+    text-transform: uppercase;
+    width: 221px;
+    height: 42px;
+    background: #015196;
+    border: none;
+    font-weight: 700;
+    color: white;
+    margin: 0px 18px;
+    cursor: pointer;
+
+}
+.btn{
+   
+}
