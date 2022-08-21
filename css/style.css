@@ -1,6 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Berkshire+Swash&family=Comic+Neue:ital,wght@0,400;0,700;1,700&family=Fredoka+One&family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Lobster&family=Manrope:wght@200;400;600&family=Montserrat:wght@400;700&family=Mulish:wght@300;400&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+header {
+  background-color: #000000;
+  height: 500px;
+  box-sizing: border-box;
+  padding-top: 133px;
+  position: relative !important;
+}
+header h1 {
+  font-family: "Berkshire Swash", cursive !important;
+  color: #FF5E19;
+  font-size: 76px;
+  text-align: center;
+  /* margin-top: 133px; */
+  margin-bottom: 28px;
+
+}
+header p{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+header img:nth-child(1){
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100px;
+}
+.img1{
+    position: absolute;
+    bottom: 0;
+}
+.img2{
+    position: absolute;
+    right: 128px;
+    top: 80px;
+}
+.img3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .card-section {
   background-color: #151515;
@@ -123,4 +169,12 @@
 }
 .common-color {
   color: #afafaf !important;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
 }

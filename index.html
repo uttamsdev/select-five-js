@@ -10,67 +10,74 @@
 </head>
 
 <body>
+    <header>
+        <h1>Select Your Best Five</h1>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <img class="img1" src="images/banner.png" alt="">
+        <img class="img2" src="images/Card-psg.png" alt="">
+        <img class="img3" src="images/football.png" alt="">
+    </header>
     <section class="card-section">
         <div class="cards">
-            <div class="card">
+            <div class="card" value="1">
                 <img src="images/messi.png" alt="">
-                <h2>Lionel Messi</h2>
+                <h2 id="name-1">Lionel Messi</h2>
                 <div class="history">
                     <p>36 Goals</p>
                     <p>.</p>
                     <p>120 Assist</p>
                 </div>
-                <button class="btn">Select</button>
+                <button id="btn1" class="btn" onclick="addPlayer1()">Select</button>
             </div>
             <div class="card">
                 <img src="images/neymar.png" alt="">
-                <h2>Neymar Jr</h2>
+                <h2 id="name-2">Neymar Jr</h2>
                 <div class="history">
                     <p>36 Goals</p>
                     <p>.</p>
                     <p>120 Assist</p>
                 </div>
-                <button class="btn">Select</button>
+                <button id="btn2" class="btn" onclick="addPlayer2()">Select</button>
             </div>
             <div class="card">
                 <img src="images/mbappge.png" alt="">
-                <h2>Kylian Mbappé</h2>
+                <h2 id="name-3">Kylian Mbappé</h2>
                 <div class="history">
                     <p>36 Goals</p>
                     <p>.</p>
                     <p>120 Assist</p>
                 </div>
-                <button class="btn">Select</button>
+                <button id="btn3" class="btn" onclick="addPlayer3()" >Select</button>
             </div>
             <div class="card">
                 <img src="images/vitor.png" alt="">
-                <h2>Vítor Machado</h2>
+                <h2 id="name-4">Vítor Machado</h2>
                 <div class="history">
                     <p>36 Goals</p>
                     <p>.</p>
                     <p>120 Assist</p>
                 </div>
-                <button class="btn">Select</button>
+                <button id="btn4" class="btn" onclick="addPlayer4()">Select</button>
             </div>
             <div class="card">
                 <img src="images/sergio.png" alt="">
-                <h2>Sergio Ramos</h2>
+                <h2 id="name-5">Sergio Ramos</h2>
                 <div class="history">
                     <p>36 Goals</p>
                     <p>.</p>
                     <p>120 Assist</p>
                 </div>
-                <button class="btn">Select</button>
+                <button id="btn5" class="btn" onclick="addPlayer5()">Select</button>
             </div>
             <div class="card">
                 <img src="images/renato.png" alt="">
-                <h2>Renato Sanches</h2>
+                <h2 id="name-6">Renato Sanches</h2>
                 <div class="history">
                     <p>36 Goals</p>
                     <p>.</p>
                     <p>120 Assist</p>
                 </div>
-                <button class="btn">Select</button>
+                <button id="btn6" class="btn" onclick="addPlayer6()">Select</button>
             </div>
 
         </div>
@@ -78,41 +85,40 @@
         <div class="cal-section">
             <div class="selected-items">
                 <h1>Selected-V</h1>
-                <ol>
-                    <li>Lionel Messi</li>
-                    <li>Lionel Messi</li>
-                    <li>Lionel Messi</li>
-                    <li>Lionel Messi</li>
-                    <li>Lionel Messi</li>
+                <ol id="ol">
+                    
                 </ol>
             </div>
             <div class="cal">
                 <h1>Budget</h1>
                 <div class="player-fee">
                     <p class="common-color">Per Player</p>
-                    <input type="text">
+                    <input type="text" id="per-player">
                 </div>
-                <button class="cal-btn">Calculate</button>
+                <button class="cal-btn" id="calculate">Calculate</button>
                 <div class="player-fee p-exp">
                     <p class="common-color">Player Expenses</p>
-                    <p>$0</p>
+                    <p>$<span id="player-expenses">0</span></p>
                 </div>
                 <div class="player-fee">
                     <p class="common-color">Manager</p>
-                    <input type="text">
+                    <input type="text" id="manager">
                 </div>
                 <div class="player-fee">
                     <p class="common-color">Coach</p>
-                    <input type="text">
+                    <input type="text" id="coach">
                 </div>
-                <button class="cal-btn">Calculate Total</button>
+                <button class="cal-btn" id="calculate-total">Calculate Total</button>
                 <div class="player-fee">
                     <p class="common-color"><b>Total</b></p>
-                    <p class="total"><b>$0</b></p>
+                    <p class="total"><b>$<span id="total-cost">0</span></b></p>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
