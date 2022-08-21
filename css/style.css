@@ -103,19 +103,24 @@
   box-sizing: border-box;
   margin-bottom: 20px;
 }
-.cal-btn{
-    border: none;
-    background: #015196;
-    width: 221px;
-    height: 42px;
-    font-weight: 700;
-    color: white;
-    margin-left: 20px;
-    font-size: 18px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    
+.cal-btn {
+  border: none;
+  background: #015196;
+  width: 221px;
+  height: 42px;
+  font-weight: 700;
+  color: white;
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
-.p-exp{
-    margin-bottom: 20px;
+.p-exp {
+  margin-bottom: 20px;
+}
+.total {
+  color: #ff5e19 !important;
+}
+.common-color {
+  color: #afafaf !important;
 }
