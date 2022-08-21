@@ -12,7 +12,7 @@
     background: #cfcccc;
 }
 ::-webkit-scrollbar-thumb{
-    background: #FF5E19;;
+    background: #FF5E19;
 }
 ::selection{
     background: rgba(0,123,255,0.3);
@@ -172,7 +172,7 @@ header img:nth-child(1){
 .player-fee {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   padding: 0px 30px;
 }
 .player-fee > input {
