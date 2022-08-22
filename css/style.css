@@ -76,7 +76,7 @@ header img:nth-child(1){
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 350px);
-  grid-row-gap: 60px;
+  /* grid-row-gap: 0px; */
 }
 .card {
   width: 264px;
