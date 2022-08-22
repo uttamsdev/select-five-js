@@ -1,7 +1,7 @@
 const common = (x,btn) => {
     let numb = document.getElementById("ol").children.length;
     if(numb == 5){
-        swal ( "Oops" ,  "You cannot add more than 5 items!" ,  "error" )
+        swal ( "Oops" ,  "You cannot add more than 5 items!" ,  "error" );
         return;
     }
     let ol = document.getElementById('ol');
@@ -46,12 +46,28 @@ const addPlayer6 = () => {
 document.getElementById('calculate').addEventListener('click', ()=> {
     let numb = document.getElementById("ol").children.length;
     let perPlayer = document.getElementById('per-player').value;
+    if(isNaN(perPlayer)){
+        swal ( "Oops" ,  "Only Number are allowed. Enter number" ,  "error" );
+        return;
+    }
+   if(perPlayer == ""){
+    swal ( "Oops" ,  "Input is empty" ,  "error" );
+    return;
+   }
     document.getElementById('player-expenses').innerText = perPlayer*numb;
 })
 
 document.getElementById('calculate-total').addEventListener('click', ()=> {
     const manager = document.getElementById('manager').value;
     const coach = document.getElementById('coach').value;
+    if(isNaN(manager || coach)){
+        swal ( "Oops" ,  "Only Number are allowed. Enter number" ,  "error" );
+        return;
+    }
+    if(manager == "" || coach==""){
+        swal ( "Oops" ,  "Input is empty" ,  "error" );
+        return;
+       }
     const  playerExpenses = document.getElementById("player-expenses").innerText;
     const total = parseFloat(manager) + parseFloat(coach) + parseFloat(playerExpenses);
     document.getElementById('total-cost').innerText = total;
