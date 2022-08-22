@@ -214,4 +214,11 @@ button[disabled] {
   color: #666666;
   cursor: auto;
 }
-
+footer{
+  height: 60px;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
