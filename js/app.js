@@ -14,7 +14,6 @@ const common = (x,btn) => {
 const addPlayer1 = () => {
     let x = document.getElementById('name-1');
     const btn = document.getElementById('btn1');
-    
     common(x,btn);
 }
 const addPlayer2 = () => {
